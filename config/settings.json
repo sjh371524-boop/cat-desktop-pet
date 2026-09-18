@@ -1,0 +1,17 @@
+{
+  "petName": "猫猫",
+  "petScale": 1.0,
+  "idleMinutes": 5.0,
+  "idleAnimation1Seconds": 60.0,
+  "defaultIdlesBeforeSleep": 5,
+  "keepAwake": false,
+  "weatherRefreshMinutes": 15,
+  "locationName": "上海",
+  "countryName": "中国",
+  "regionName": "上海市",
+  "latitude": 31.2304,
+  "longitude": 121.4737,
+  "timezone": "Asia/Shanghai",
+  "alwaysOnTop": true,
+  "startNearBottomRight": true
+}

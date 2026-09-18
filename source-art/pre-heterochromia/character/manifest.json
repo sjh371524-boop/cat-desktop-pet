@@ -1,0 +1,31 @@
+{
+  "version": 9,
+  "character": "pixel-calico-from-user-reference",
+  "frameDirectories": {
+    "stand": "stand",
+    "drag": "drag",
+    "drag_side_sheet": "drag_side/drag-side-sheet-v2-rgba.png",
+    "drag_side_open": "drag_side/open",
+    "drag_side_blink": "drag_side/blink",
+    "drag_transition_right": "drag_transition/right",
+    "drag_transition_left": "drag_transition/left",
+    "lick": "lick",
+    "sleep_transition": "sleep_transition",
+    "sleep": "sleep",
+    "wake": "wake",
+    "wake_bridge": "wake/001b-transition-v1.png",
+    "pet": "pet",
+    "pet_gesture_sheet": "pet_gesture/pet-gesture-sheet-v2-rgba.png",
+    "pet_gesture_right": "pet_gesture/right",
+    "pet_gesture_left": "pet_gesture/left",
+    "petting_hand_overlay": "../ui/petting-hand-v1.png",
+    "idle_1_paw_right": "idle_1/paw_right",
+    "idle_1_paw_left": "idle_1/paw_left",
+    "soothe_sleep_drowsy_source": "stand",
+    "soothing_hand_sheet": "../ui/soothing-hand-sheet-v2-chroma.png",
+    "soothing_hand": "../ui/soothing_hand",
+    "soothed_lowering_start": "stand/001.png",
+    "soothed_lowering_source": "sleep_transition"
+  },
+  "notes": "Reference-derived RGBA pixel frames. Every state change uses the shared smootherstep transition profile. Dragging begins with independent right/left front-to-side turn bridges, then uses the directional open/blink gait; releasing reverses the bridge back to front stand. Wake includes an additional half-raised bridge frame. Petting has a two-second closed-eye head-nuzzle state followed by a three-second single downward paw gesture whose neutral/high/middle/low/neutral keys use long runtime in-between dissolves. Soothing uses the original open/closed stand silhouettes and eight full-hand poses for two seconds, then directly lowers to sleep for one second. The stretch state is removed. Its dedicated lowering sequence starts from the exact closed-eye stroke endpoint, continuously blends through the existing lowering poses, and ends in the sleeping frame with matched breathing and Zzz. Scheduled sleep remains unchanged. All programmatic fang overlays remain removed. Numbered idle actions retain neutral stand endpoints."
+}

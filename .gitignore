@@ -1,0 +1,36 @@
+dist/
+obj/
+*.user
+*.suo
+config/settings.local.json
+config/weather-cache.json
+config/weather-status.log
+logs/
+
+# Historical rollback archives stay local; retain source-art/pre-heterochromia.
+source-art/2026-*/
+
+# Release outputs and diagnostics.
+release/
+diagnostics/
+
+# Personal configuration, weather cache, and settings backups.
+**/settings.local.json
+**/settings.local.json.*
+**/weather-cache.json
+**/weather-status.log
+**/backups/
+
+# Local secrets (keep a sanitized environment example if provided).
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Generated test errors and live weather records.
+tests/*error*.txt
+tests/weather-live.txt
+tests/**/*.exe
+tests/**/*.pdb
+tests/**/16-current-weather.png
